@@ -18,13 +18,18 @@ public class Finish : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             levelCompleted = true;
-            CompleteLevel();
+            ReplayMethod();
         }
     }
 
-    private void CompleteLevel()
+    public void ReplayMethod()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(3);
+        Time.timeScale = 1;
+    }
+    public void GoToEndScene()
+    {
+        SceneManager.LoadScene("EndScene");
     }
 
 }
