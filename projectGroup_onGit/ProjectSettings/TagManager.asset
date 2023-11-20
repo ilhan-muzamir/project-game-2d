@@ -41,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: -layer
+    uniqueID: 1745974091
+    locked: 0
   - name: BG
     uniqueID: 4088021773
     locked: 0
@@ -56,6 +59,12 @@ TagManager:
   - name: Ground
     uniqueID: 216093227
     locked: 0
+  - name: HiddenBlk
+    uniqueID: 3347054519
+    locked: 0
   - name: GroundBg
     uniqueID: 3131623449
+    locked: 0
+  - name: Water
+    uniqueID: 2750149743
     locked: 0
