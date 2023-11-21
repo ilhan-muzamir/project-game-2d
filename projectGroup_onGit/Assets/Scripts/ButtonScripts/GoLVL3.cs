@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonScript2lvl3 : MonoBehaviour
+public class Butto2lvl3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

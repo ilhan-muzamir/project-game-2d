@@ -11,7 +11,6 @@ public class Button2lvl2 : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     public void ReplayMethod()
     {
         SceneManager.LoadScene(2);
