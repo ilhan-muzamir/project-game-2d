@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class ItemCollecter : MonoBehaviour
 {
     private int coin = 0;
 
     [SerializeField] private Text CoinText;
+    [SerializeField] private Text FinalCoinText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,7 +17,8 @@ public class ItemCollecter : MonoBehaviour
         {
             Destroy(collision.gameObject);
             coin++;
-            CoinText.text = "Coin: " + coin;
+            CoinText.text = ":" + coin;
+            FinalCoinText.text = ":" + coin;
         }
     }
 }

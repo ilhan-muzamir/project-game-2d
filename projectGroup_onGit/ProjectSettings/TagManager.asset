@@ -7,6 +7,8 @@ TagManager:
   - Coin
   - Trap
   - Ladder
+  - EndFlag
+  - StartFlag
   layers:
   - Default
   - TransparentFX
