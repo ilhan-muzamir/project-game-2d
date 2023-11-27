@@ -1717,9 +1717,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770470282}
-        m_TargetAssemblyTypeName: Button2lvl2, Assembly-CSharp
-        m_MethodName: GoToLVL2
+      - m_Target: {fileID: 1770470284}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: GoNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45577,7 +45577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1770470283}
-  - component: {fileID: 1770470282}
+  - component: {fileID: 1770470284}
   m_Layer: 0
   m_Name: ButtonController
   m_TagString: Untagged
@@ -45585,18 +45585,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1770470282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770470281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552ca43bc9a609a43a84fe8d7e410763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1770470283
 Transform:
   m_ObjectHideFlags: 0
@@ -45612,6 +45600,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770470284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770470281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ed7638b6d1df4409bcba2ecbbf9f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1772839300
 PrefabInstance:
   m_ObjectHideFlags: 0

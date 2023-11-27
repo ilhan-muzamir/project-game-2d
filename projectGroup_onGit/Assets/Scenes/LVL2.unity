@@ -640,7 +640,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 139231522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f79d36407d9ce2d40b1d0af3137d3cf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 86ed7638b6d1df4409bcba2ecbbf9f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &145070722
@@ -11422,8 +11422,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278214399
-  m_fontColor: {r: 1, g: 0.36862746, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -27337,68 +27337,6 @@ Transform:
   - {fileID: 1815702351}
   m_Father: {fileID: 1604533038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1342142187
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1388238778}
-    m_Modifications:
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 52.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 949046758538375200, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-      propertyPath: m_Name
-      value: Spike (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
---- !u!4 &1342142188 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 339145650568378406, guid: 6fafa56bd5fb6b44796d3aafde2d2e49, type: 3}
-  m_PrefabInstance: {fileID: 1342142187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1359762822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27647,7 +27585,6 @@ Transform:
   - {fileID: 1860538912}
   - {fileID: 781565769}
   - {fileID: 957251348}
-  - {fileID: 1342142188}
   - {fileID: 927376889}
   - {fileID: 1024807714}
   - {fileID: 775624593}
@@ -30087,8 +30024,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 139231525}
-        m_TargetAssemblyTypeName: Butto2lvl3, Assembly-CSharp
-        m_MethodName: GoToLVL3
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: GoNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30982,7 +30919,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2136798003}
   - {fileID: 959486673}
   - {fileID: 1604533038}
   - {fileID: 1555187968}
@@ -30993,3 +30929,4 @@ SceneRoots:
   - {fileID: 2093630081}
   - {fileID: 1731056775}
   - {fileID: 795607895}
+  - {fileID: 2136798003}

@@ -450,7 +450,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1851363574}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: GoToLVL1
+        m_MethodName: GoNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
