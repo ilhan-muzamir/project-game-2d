@@ -11,6 +11,10 @@ public class ItemCollecter : MonoBehaviour
     [SerializeField] private Text CoinText;
     [SerializeField] private Text FinalCoinText;
 
+    public GameObject GameComp;
+    public GameObject MorCoin;
+
+    private bool isMorCoinActive = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Coin"))
@@ -19,6 +23,26 @@ public class ItemCollecter : MonoBehaviour
             coin++;
             CoinText.text = ":" + coin;
             FinalCoinText.text = ":" + coin;
+           
+        }
+        if (collision.gameObject.CompareTag("EndFlag"))
+        {
+
+            if (coin >= 3)
+            {
+                GameComp.SetActive(true);
+                Debug.Log("GameComp activated. Player collected 3 or more coins.");
+            }
+            else
+            {
+                if(!isMorCoinActive)
+                MorCoin.SetActive(true);
+                Debug.Log("MorCoin activated. Player collected less than 3 coins.");
+                isMorCoinActive = true;
+
+            }
+
+
         }
     }
 }
