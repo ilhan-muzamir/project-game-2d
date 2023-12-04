@@ -14,11 +14,14 @@ public class ItemCollecter : MonoBehaviour
     public GameObject GameComp;
     public GameObject MorCoin;
 
+    [SerializeField] private AudioSource CoinCollectedSoundFX;
+
     private bool isMorCoinActive = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
+            CoinCollectedSoundFX.Play();
             Destroy(collision.gameObject);
             coin++;
             CoinText.text = ":" + coin;

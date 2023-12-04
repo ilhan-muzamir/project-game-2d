@@ -8,8 +8,10 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+    [SerializeField] private AudioSource PlayerDeathSoundFX;
     void Start()
     {
+        PlayerDeathSoundFX.Play();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }

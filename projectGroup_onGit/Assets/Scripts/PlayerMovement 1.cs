@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 7;
     [SerializeField] private float jumpforce = 18f;
 
+    [SerializeField] private AudioSource PlayerJumpSoundFX;
+
     private enum MovementStat { idle, running, jumping, falling }
 
 
@@ -64,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (rb.velocity.y > .1f)
         {
+            PlayerJumpSoundFX.Play();
             state = MovementStat.jumping;
         }
         else if (rb.velocity.y < -.1f)
