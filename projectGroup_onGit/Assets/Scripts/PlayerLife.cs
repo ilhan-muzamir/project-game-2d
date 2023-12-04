@@ -11,7 +11,6 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private AudioSource PlayerDeathSoundFX;
     void Start()
     {
-        PlayerDeathSoundFX.Play();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -26,6 +25,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        PlayerDeathSoundFX.Play();
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("die");
     }
