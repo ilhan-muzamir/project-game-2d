@@ -34,7 +34,7 @@ public class ItemCollecter : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("EndFlag"))
         {
-            if (coin >= 3)
+            if (coin >= 5)
             {
                 GameComp.SetActive(true);
                 Debug.Log("GameComp activated. Player collected 3 or more coins.");
