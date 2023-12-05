@@ -19,6 +19,7 @@ public class ItemCollecter : MonoBehaviour
 
     private bool isMorCoinActive = false;
     private bool isMusicStopped = false;
+    public AudioSource audiosource;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -55,6 +56,7 @@ public class ItemCollecter : MonoBehaviour
 
     private void StopMusic()
     {
+        audiosource = GetComponent<AudioSource>();
         // Add logic to stop the background music here
         if (BackgroundMusic != null)
         {

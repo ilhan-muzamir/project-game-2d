@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicController : MonoBehaviour
 {
     private static MusicController instance;
-    private AudioSource audiosource;
+    public AudioSource audiosource;
 
     private void Awake()
     {
@@ -31,6 +31,7 @@ public class MusicController : MonoBehaviour
     }    // Method to stop the music
     public void StopMusic()
     {
+        audiosource = GetComponent<AudioSource>();
         if (audiosource != null && audiosource.isPlaying)
         {
             audiosource.Stop();

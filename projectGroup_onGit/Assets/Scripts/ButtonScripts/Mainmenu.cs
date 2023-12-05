@@ -18,6 +18,8 @@ public class Mainmenu : MonoBehaviour
             // Stop the music
             MusicController.StopMusic();
             Debug.Log("Music stopped.");
+
+            Destroy(MusicController.gameObject);
         }
 
         // Load the menu scene
